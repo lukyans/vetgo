@@ -204,7 +204,7 @@
 }
 
 /* Very simple grid for example */
-.container { position: relative; width: 960px; margin: 20px auto; padding: 0; }
+.container { position: relative; width: 960px; margin: 15px auto; padding: 0; }
 
 .container .column, .container .columns { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
 
@@ -219,8 +219,12 @@
 }
 
 .hline-bottom {
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     border-bottom: 5px solid #8ab92d; /* whichever color you prefer */
     margin-left: 18%;
     margin-right: 20%;
+}
+
+#id, p {
+  font-size: 20px;
 }
