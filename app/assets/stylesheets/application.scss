@@ -63,20 +63,6 @@
    .carousel-caption {
      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
    }
-   [class*="col-"] {
-       width: 100%;
-   }
-   .columns {
-     width: 100%;
-   }
-   .container { width: 100%; }
-
-   .container .column, .container .columns { width: 100%; }
-
-   .container .one-third.column { width: 100%; }
-
-   .container .two-thirds.column { width: 100%; }
-   // .columns { width: 100%; }
  }
  .bg-1 {
      background: #2d2d30;
@@ -232,9 +218,36 @@
   font-size: 150%;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    .columns {
+      width: 100%;
+    }
+    .container { width: 100%; }
 
+    .container .column, .container .columns { width: 100%; }
+
+    .container .one-third.column { width: 100%; }
+
+    .container .two-thirds.column { width: 100%; }
+    // // .columns { width: 100%; }
+}
+
+.container {
+  @include container-fixed();
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
 }
 
 .hline-bottom {
