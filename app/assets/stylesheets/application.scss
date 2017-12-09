@@ -64,6 +64,13 @@
      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
    }
  }
+
+ @media (min-width: 979px) {
+body {
+padding-top: 60px;
+}
+}
+
  .bg-1 {
      background: #2d2d30;
      color: #bdbdbd;
@@ -204,7 +211,7 @@
 }
 
 /* Very simple grid for example */
-.container { position: relative; width: 100%; margin: 15px auto; padding: 0; }
+.container { position: relative; width: 960px; margin: 15px auto; padding: 0; }
 
 .container .column, .container .columns { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
 
@@ -216,38 +223,6 @@
 }
 .columns, .p {
   font-size: 150%;
-}
-
-@media (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-    .columns {
-      width: 100%;
-    }
-    .container { width: 100%; }
-
-    .container .column, .container .columns { width: 100%; }
-
-    .container .one-third.column { width: 100%; }
-
-    .container .two-thirds.column { width: 100%; }
-    // // .columns { width: 100%; }
-}
-
-.container {
-  @include container-fixed();
-
-  @media (min-width: $screen-sm-min) {
-    width: $container-sm;
-  }
-  @media (min-width: $screen-md-min) {
-    width: $container-md;
-  }
-  @media (min-width: $screen-lg-min) {
-    width: $container-lg;
-  }
 }
 
 .hline-bottom {
