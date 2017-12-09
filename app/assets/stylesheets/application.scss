@@ -226,6 +226,14 @@
     .columns {
       width: 100%;
     }
+    .container { width: 100%; }
+
+    .container .column, .container .columns { width: 100%; }
+
+    .container .one-third.column { width: 100%; }
+
+    .container .two-thirds.column { width: 100%; }
+    // .columns { width: 100%; }
 }
 
 .hline-bottom {
