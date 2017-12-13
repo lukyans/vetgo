@@ -59,13 +59,19 @@
  .carousel-caption h3 {
      color: #fff !important;
  }
- @media (max-width: 800px) {
+ @media (max-width: 600px) {
    .carousel-caption {
-     float: left;
-    width: 60%;
      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
    }
  }
+ @media only screen and (max-width: 414px) {
+  .deviceWidth {width:280px!important; padding:0;}
+  .center {text-align: center!important;}
+    }
+
+    @media only screen and (max-width: 960px) {
+      
+    }
 
  @media (min-width: 979px) {
 body {
