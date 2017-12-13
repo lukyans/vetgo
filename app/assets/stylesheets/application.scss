@@ -61,6 +61,8 @@
  }
  @media (max-width: 600px) {
    .carousel-caption {
+     float: left;
+     width: 60%;
      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
    }
  }
